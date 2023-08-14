@@ -21,3 +21,4 @@ Route::get('/', function () {
 // primeiro item do array é a classe e o segundo item é o método que eu vou chamar
 Route::get('/series', [SeriesController::class, 'index']);
 Route::get('/series/criar', [SeriesController::class, 'create']);
+Route::post('/series/salvar', [SeriesController::class, 'store']);
